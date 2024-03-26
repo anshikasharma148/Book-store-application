@@ -1,18 +1,67 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./ProductListingCard.css";
-import ProductImage from "../../../assets/books/oopswithcpp.jpg";
+import "swiper/css";
+import "swiper/css/effect-cards";
+// import ProductImage from "../../../assets/books/oopswithcpp.jpg";
 
-export default function ProductListingCard() {
-  // const [books, setBooks] = useState([]);
-  // useEffect(() => {
-  //   fetch("http://localhost:5000/all-books")
-  //     .then((res) => res.json())
-  //     .then((data) => console.log(data));
-  // }, []);
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import './styles.css';
+import { Pagination } from "swiper/modules";
+import { Link } from "react-router-dom";
+
+const ProductListingCard = ({ headline, books }) => {
+  console.log(books);
   return (
     <>
-      {/* <div>ProductListingCard</div> */}
-      <div className="product-listing-card">
+      <div className="my-16 px-4 lg:px-24">
+        <h2 className="text-5x1 text-center font-bold text-black my-5">
+          {headline}
+        </h2>
+        <div>
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={10}
+            pagination={{
+              clickable: true,
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+              },
+            }}
+            modules={[Pagination]}
+            className="mySwiper w-full h-full"
+          >
+            {books.map((book) => (
+              <SwiperSlide key={book._id}>
+                <Link to="/">
+                  <div>
+                    <img src={book.imageURL} alt="" />
+                  </div>
+                  <div>
+                    <h3>{book.title}</h3>
+                  </div>
+                </Link>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div>
+      {/* <div className="product-listing-card">
         <div className="product-listing-img-container">
           <img src={ProductImage} alt="" style={{ width: "150px" }} />
         </div>
@@ -24,7 +73,9 @@ export default function ProductListingCard() {
             Add to Cart
           </a>
         </div>
-      </div>
+      </div> */}
     </>
   );
-}
+};
+
+export default ProductListingCard;
