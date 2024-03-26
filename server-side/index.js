@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 5000;
 const cors = require("cors");
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 const { ClientSession, ObjectId } = require("mongodb");
 //defining middleware
 const books = require("./model/books");
@@ -38,7 +38,8 @@ async function run() {
 
     //insert a book
     app.post("/upload-book", async (req, res) => {
-      const book = new books(req.body);
+      const data = req.body;
+      const book = new books(data);
       const result = await booksCollections.insertOne(book);
       res.send(result);
     });
