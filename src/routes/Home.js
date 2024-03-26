@@ -15,7 +15,7 @@ function Home (){
                 title="Unleash Your Engineering Imagination"
                 text="Explore your knowledge with EngiReads"
                 buttonText="Explore"
-                url="/"
+                url="/books"
                 btnClass="show"
             />
             

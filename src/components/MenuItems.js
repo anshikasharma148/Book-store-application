@@ -26,7 +26,7 @@ export const MenuItems = [
 
     {
         title: "Shop",
-        url: "/shop",
+        url: "/books",
         cName: "nav-links",
         icon: "fa-solid fa-book-open"
         
