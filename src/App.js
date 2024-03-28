@@ -14,26 +14,32 @@ import Login from "./pages/LoginPage/Login";
 
 export default function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Mycart />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/books" element={<BooksPage />} />
-          {/* <Route path="/book-details/:id" element={<BookDetailsPage/>} /> */}
           <Route
             path="/book/:id"
             element={<SingleBook />}
             loader={({ params }) =>
-              fetch(`http://localhost:5000/book/${params.id}`)
+              fetch(`http://localhost:5000/book/${params.id}`).then(
+                (response) => {
+                  if (!response.ok) {
+                    throw new Error("Failed to fetch book data");
+                  }
+                  return response.json();
+                }
+              )
             }
           />
           <Route path="/Register" element={<Register />} />
           <Route path="/Login" element={<Login />} />
         </Routes>
-      </BrowserRouter>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
