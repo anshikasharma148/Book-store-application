@@ -35,9 +35,16 @@ export const MenuItems = [
     icon: "fa-solid fa-phone",
   },
 
-  {
-    title: "Register",
-    url: "/register",
-    cName: "nav-links-mobile",
-  },
+  // {
+  //   title: "Login",
+  //   url: "../pages/LoginPage/Login.js",
+  //   cName: "Button",
+  // },
+
+  // {
+  //   title: "Register",
+  //   url: "../pages/RegisterPage/Register.js",
+  //   cName: "Button",
+  // },
+  
 ];

@@ -6,6 +6,7 @@ import {MenuItems} from "./MenuItems"
 import navlogo from '../../src/assets/logo.png'
 
 
+
 class Navbar extends Component{
 
     state={clicked: false};
@@ -35,8 +36,13 @@ class Navbar extends Component{
                             </li>
                         ) ;
                     })}
-                    <button>Register</button>
-                    <button>Sign In</button>
+                    
+
+                    <Link to="/Login" className="Button">Login</Link>
+
+                    <Link to="/Register" className="Button">Register</Link>
+               
+                   
 
 
                 </ul>

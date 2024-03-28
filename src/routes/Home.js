@@ -18,28 +18,7 @@ function Home() {
         btnClass="show"
       />
 
-<<<<<<< HEAD
-function Home (){
-    return(
-        <>
-            <Navbar/>
-            <Hero
-                cName="hero"
-                heroImg = {homeimg}
-                title="Unleash Your Engineering Imagination"
-                text="Explore your knowledge with EngiReads"
-                buttonText="Explore"
-                url="/books"
-                btnClass="show"
-            />
-            
-            <ProductListing/>
-            <div className="design" style={{backgroundColor: '#01959a', height: '100vh', paddingTop: '20px', }}>
-                <ContactForm/>
-            </div>
-        </>
-    )
-=======
+
       <ProductListing />
       <div
         className="design"
@@ -53,6 +32,6 @@ function Home (){
       </div>
     </>
   );
->>>>>>> 677028f9cfbbfc318bca40f677deb5d7f45bebea
+
 }
 export default Home;

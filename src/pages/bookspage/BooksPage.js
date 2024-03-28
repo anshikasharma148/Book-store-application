@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../../components/Navbar'
 import SearchInputForm from '../../components/forms/searchinputform/SearchInputForm'
 import './BooksPage.css'
-import ProductListingAll from '../../layouts/details-section/productlistingall/ProductListingAll'
+
 
 export default function BooksPage() {
   return (
@@ -14,7 +14,7 @@ export default function BooksPage() {
             <SearchInputForm />
         </div>
 
-        <ProductListingAll />
+    
         
     </section>
   )

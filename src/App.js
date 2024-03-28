@@ -9,6 +9,10 @@ import {Route, Routes } from 'react-router-dom';
 import BooksPage from './pages/bookspage/BooksPage';
 import BookDetailsPage from './pages/bookspage/bookdetailspage/BookDetails';
 
+import Register from './pages/RegisterPage/Register';
+import Login from './pages/LoginPage/Login';
+
+
 
 export default function App() {
   return (
@@ -20,6 +24,8 @@ export default function App() {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/books" element={<BooksPage/>} />
         <Route path="/book-details/:id" element={<BookDetailsPage/>} />
+        <Route path="/Register" element={<Register/>}/>
+        <Route path="/Login" element={<Login/>}/>
         
       </Routes>
       

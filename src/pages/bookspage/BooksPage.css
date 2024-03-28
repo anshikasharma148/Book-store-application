@@ -1,16 +1,4 @@
-<<<<<<< HEAD
-.search-container{
-    width: 40%;
-    margin: auto;
-    padding-top:  5%;
-    margin-bottom: 20px;
-}
-.search-container h2{
-    text-align: center;
-    margin-top: 80px;
-    
-}
-=======
+
 .search-container {
   width: 40%;
   margin: auto;
@@ -19,4 +7,4 @@
 .search-container h2 {
   text-align: center;
 }
->>>>>>> 677028f9cfbbfc318bca40f677deb5d7f45bebea
+

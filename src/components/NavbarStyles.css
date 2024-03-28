@@ -58,7 +58,7 @@
     display: none;
 }
 
-button{
+.Button{
     padding: 0.5rem 1rem;
     white-space: nowrap;
     border-radius: 0.3rem;
