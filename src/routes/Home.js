@@ -18,6 +18,7 @@ function Home() {
         btnClass="show"
       />
 
+
       <ProductListing />
       <div
         className="design"
@@ -31,5 +32,6 @@ function Home() {
       </div>
     </>
   );
+
 }
 export default Home;

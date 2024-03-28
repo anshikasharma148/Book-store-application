@@ -1,10 +1,11 @@
-.search-input-form-container {
-  display: flex;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 5px;
-  margin-top: 10px;
-  box-shadow: 4px 4px 15px #ccc;
+.search-input-form-container{
+    display: flex;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 80px;
+    box-shadow: 4px 4px 15px #ccc;
+
 }
 
 .search-input {

@@ -20,12 +20,13 @@ export const MenuItems = [
     icon: "fa-solid fa-cart-shopping",
   },
 
-  {
-    title: "Shop",
-    url: "/books",
-    cName: "nav-links",
-    icon: "fa-solid fa-book-open",
-  },
+    {
+        title: "Shop",
+        url: "/shop",
+        cName: "nav-links",
+        icon: "fa-solid fa-book-open"
+        
+    },
 
   {
     title: "Contact",
@@ -34,9 +35,16 @@ export const MenuItems = [
     icon: "fa-solid fa-phone",
   },
 
-  {
-    title: "Register",
-    url: "/register",
-    cName: "nav-links-mobile",
-  },
+  // {
+  //   title: "Login",
+  //   url: "../pages/LoginPage/Login.js",
+  //   cName: "Button",
+  // },
+
+  // {
+  //   title: "Register",
+  //   url: "../pages/RegisterPage/Register.js",
+  //   cName: "Button",
+  // },
+  
 ];
