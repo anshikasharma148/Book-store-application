@@ -13,6 +13,7 @@ import "swiper/css/pagination";
 // import './styles.css';
 import { Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
+import { FaCartShopping } from "react-icons/fa6";
 
 const ProductListingCard = ({ headline, books }) => {
   console.log(books);
@@ -48,12 +49,16 @@ const ProductListingCard = ({ headline, books }) => {
           >
             {books.map((book) => (
               <SwiperSlide key={book._id}>
-                <Link to="/">
-                  <div>
-                    <img src={book.imageURL} alt="" />
+                <Link to={`/book/${book._id}`}>
+                  <div className="relative">
+                    <img src={book.imageURL} />
                   </div>
                   <div>
                     <h3>{book.title}</h3>
+                    <p>{book.author}</p>
+                  </div>
+                  <div>
+                    <p>${book.price}</p>
                   </div>
                 </Link>
               </SwiperSlide>

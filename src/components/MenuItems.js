@@ -20,13 +20,12 @@ export const MenuItems = [
     icon: "fa-solid fa-cart-shopping",
   },
 
-    {
-        title: "Shop",
-        url: "/shop",
-        cName: "nav-links",
-        icon: "fa-solid fa-book-open"
-        
-    },
+  {
+    title: "Shop",
+    url: "/books",
+    cName: "nav-links",
+    icon: "fa-solid fa-book-open",
+  },
 
   {
     title: "Contact",
@@ -46,5 +45,4 @@ export const MenuItems = [
   //   url: "../pages/RegisterPage/Register.js",
   //   cName: "Button",
   // },
-  
 ];
