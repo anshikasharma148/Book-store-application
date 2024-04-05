@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 // import './styles.css';
 import { Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
-import { FaCartShopping } from "react-icons/fa6";
+// import { FaCartShopping } from "react-icons/fa6";
 
 const ProductListingCard = ({ headline, books }) => {
   console.log(books);
